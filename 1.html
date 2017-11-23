@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Bangalore Guide</title>
+	<style type="text/css">
+		body{/*background: url(1.jpg) no-repeat left 140px center fixed; 
+             background-size:1100px 600px;*/
+             background-color: #0e2a34;
+			}
+		img.a{
+			margin-left: 1100px;
+			right : 0px;
+			width: 350px;
+			height: 275px;
+			margin-bottom: 0px;
+			margin-top:100px;
+		}
+		img.b{
+			float:right;
+			width: 350px;
+			height: 275px;
+			right : 0px;
+			margin: 0 0 10px 10px;
+
+		}
+
+		h1{
+			align-content: center;
+			color: white;
+			font-family: "Lucida Console", Lucida, Monospace;
+			text-shadow: 2px 2px 4px #000000;
+		}
+		p.paragraph{
+			align-content: center;
+			color: white;
+			font-family: "Lucida Console", Lucida, Monospace;
+			font-size: 20px;
+			float: left;
+		}
+		p.paragraph1{
+			align-content: center;
+			color: white;
+			
+			font-size: 200px;
+			
+		}
+		div.paragraph{
+			width : 1000px;
+			height: 100px;
+			margin-left: 250px; 
+			padding-top: 100px;
+			
+		}
+		
+		p.welcome{
+			align-content: center;
+			color: black;
+			font-family: "Lucida Console", Lucida, Monospace;
+			font-size: 15px;
+			float: left;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		div.nav{
+			position: sticky;
+			width:100%;
+			background-color: #009999;
+			color: black;
+			float: left;
+			display: inline-block;
+		}
+		.button {
+    		background-color: #009999; /* Green */
+    		border: 1px solid black;
+    		color: white;
+    		padding: 15px 32px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		font-size: 16px;
+    		cursor: pointer;
+    		float: left;
+		}
+		 .button:not(:last-child) {
+    	border-right: none; /* Prevent double borders */
+		}
+		.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+		.button:hover {
+    	background-color: #00ffff;
+    	color: #051014;
+    	transition: 0.3s;
+    	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		ul.left_nav{
+			list-style-type: none;
+    		margin-top: 75px;
+   		    padding: 0;
+    		width: 12%;
+    		background-color: #0e2a34;
+    		position: fixed;
+    		height: 80%;
+    		overflow: auto;
+    		font-size: 20px;
+    		color: #009999;
+		}
+		li a {
+    		display: block;
+    		color: #009999;
+    		padding: 8px 0 8px 16px;
+    		text-decoration: none;
+}
+
+li a.active {
+    		background-color: #4CAF50;
+    		color: black;
+}
+
+li a:hover:not(.active) {
+    background-color: #009999;
+    color: white;
+    transition: 0.6s;
+}
+img.myslides{
+	margin-left: 100px;
+
+}
+	</style>
+
+</head>
+
+<body>
+<h1 align="center">The Bangalore Guide</h1>
+<div class="nav">
+  <p class="welcome">Welcome!</p>
+  <a href="1.html"><button class="button">Home</button></a>
+  <a href="trial1.html"><button class="button">Food</button></a>
+  <a href="trial2.html"><button class="button">Tour</button></a>
+  <a href="trial3.html"><button class="button">Fun</button></a>
+  <a href="trial3.html"><button class="button">Shop</button></a>
+  <a href="trial3.html"><button class="button">About</button></a>
+</div>
+<ul class="left_nav">
+	<li><a href="trial1.html">Locations</a></li>
+	<li><a href="trial1.html">Map</a></li>
+	<li><a href="trial1.html">About City</a></li>
+	<li><a href="trial1.html">Landmarks</a></li>
+	<li><a href="https://en.wikipedia.org/wiki/Bangalore">Wiki</a></li>
+	<li><a href="https://www.accuweather.com/en/in/bengaluru/204108/weather-forecast/204108">Weather</a></li>
+</ul>
+<div class="w3-content w3-section" style="max-width:800px;max-height:529px;margin-left: 200px;margin-top: 50px;float: left;box-shadow: 10px 10px #051014;">
+  <img class="mySlides" src="1.jpg" style="width:100%">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<!-- <a href="trial1.html"><img src="2.jpg" class="a"/></a> -->
+<div class="paragraph">
+<!-- <p class="paragraph">Bangalore officially known as Bengaluru , is the capital of the Indian state of Karnataka. It has a population of about 8.42 million and a metropolitan population of about 8.52 million, making it the third most populous city and fifth most populous urban agglomeration in India. It is located in southern India on the Deccan Plateau. Its elevation is over 900 m (3,000 ft) above sea level, the highest of India's major cities.</p> -->
+	<h1><pre>   
+
+
+	Everything 
+	You  
+	need 
+	in 
+	Bangalore!</pre></h1>
+</div>
+<!-- <a href="trial1.html"><img src="3.jpg" class="b"/></a> -->
+</body>
+</html>
